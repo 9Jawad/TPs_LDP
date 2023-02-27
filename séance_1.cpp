@@ -1,6 +1,5 @@
 // INTRODUCTION AU TP DE LDP
 
-
 #include <iostream>
 
 int main(){
@@ -12,28 +11,26 @@ int main(){
 
 // Exercice 7 --------------------------------------------------------------
 
-
 // #include <iostream>
 using namespace std;
 
-int main1(){
+int sum(){
     int a, b;
-    cout << "Entrer la valeur de a: " << endl;
+    cout << "Entrer la valeur de a: ";
     cin >> a;
-    cout << "Entrer la valeur de b: " << endl;
+    cout << "Entrer la valeur de b: ";
     cin >> b;
     cout << "Sortie " << a + b << endl;
     return 0;
 }
 
 
-// Exercices 8  --------------------------------------------------------------
-
+// Exercice 8  --------------------------------------------------------------
 
 // #include<iostream>
 using namespace std;
 
-int main2(){
+int div(){
     cout << " Division calculator " << endl;
     int a, b;
     cout << "Enter a value 1: " << endl;
