@@ -13,7 +13,7 @@ int main(){
 // Exercice 7 --------------------------------------------------------------
 
 
-#include <iostream>
+// #include <iostream>
 using namespace std;
 
 int main1(){
@@ -30,13 +30,11 @@ int main1(){
 // Exercices 8  --------------------------------------------------------------
 
 
-#include<iostream>
+// #include<iostream>
 using namespace std;
 
 int main2(){
-
     cout << " Division calculator " << endl;
-    // this is a division calculator
     int a, b;
     cout << "Enter a value 1: " << endl;
     cin >> a;
