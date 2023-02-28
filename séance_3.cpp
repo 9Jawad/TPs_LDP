@@ -59,5 +59,19 @@ void retard() {
 /// en python, nous ne retrouvons pas ce retard là
 
 
-// Exercice 21 ----------------------------------------------------------------
+// Exercice 21  (Shadowing) ---------------------------------------------------
 
+// #include <iostream>
+using namespace std;
+
+int main(){
+    int x = 2; // x1
+    {
+        cout << x + 3 << endl;
+        {
+            x = 1;  // x2
+            cout << x + 3 << endl;
+        }
+    }
+    return 0;
+}
