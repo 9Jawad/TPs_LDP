@@ -41,7 +41,7 @@ int main(){
 // #include <iostream>
 using namespace std;
 
-int bo() {
+void bo() {
     bool a = true, b = false, c = true;
 
     bool result = a or b and c; // Résultat attendu : true
@@ -50,7 +50,6 @@ int bo() {
     // préciser l'ordre de priorité
     result = (a or b) and c;
     cout << "(a or b) and c = " << result << endl;
-    return 0;
 }
 
 
