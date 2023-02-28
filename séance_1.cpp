@@ -14,14 +14,13 @@ int main(){
 // #include <iostream>
 using namespace std;
 
-int sum(){
+void sum(){
     int a, b;
     cout << "Entrer la valeur de a: ";
     cin >> a;
     cout << "Entrer la valeur de b: ";
     cin >> b;
     cout << "Sortie " << a + b << endl;
-    return 0;
 }
 
 
@@ -30,7 +29,7 @@ int sum(){
 // #include<iostream>
 using namespace std;
 
-int div(){
+void div(){
     cout << " Division calculator " << endl;
     int a, b;
     cout << "Enter a value 1: " << endl;
@@ -38,5 +37,4 @@ int div(){
     cout << "Enter a value 2: " << endl;
     cin >> b;
     cout << "The result: " << a / b << endl;
-    return 0;
 }
