@@ -11,7 +11,7 @@ int myMod(int x, int y) {
     return x % y;
 }
 
-void div() {
+void diviseur() {
     int a, b, c;
     cout << "Entrez une valeur pour le dividende 'a':" << endl;
     cin >> a;
@@ -65,7 +65,7 @@ void retard() {
 // #include <iostream>
 using namespace std;
 
-int main(){
+void var(){
     int x = 2; // x1
     {
         cout << x + 3 << endl;
@@ -74,7 +74,6 @@ int main(){
             cout << x + 3 << endl;
         }
     }
-    return 0;
 }
 
 
@@ -94,3 +93,34 @@ int func3() {
 
 // Exercice 23 ----------------------------------------------------------------
 
+// #include <iostream>
+using namespace std;
+
+int f1(int& x1){
+    x1--;
+    return x1;
+}
+
+int f2(){
+    static int x1 = 0;
+    x1++;
+    return x1;
+}
+
+int fake_main(){
+    int x1 = 3;
+    f1(x1);
+    int tmp = f2();
+    int x2 = f1(tmp);
+    cout << x2 << endl;
+    return 0;
+}
+
+
+
+// MAIN
+
+int main(){
+    func3(); var(); retard(); diviseur(); fake_main();
+    return 0;
+}

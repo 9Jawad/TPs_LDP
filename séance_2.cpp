@@ -16,7 +16,7 @@
 #include <iostream>
 using namespace std;
 
-int main(){
+void div_mu(){
     int a, b;
     cout << "introduisez un entier a: ";
     cin >> a;
@@ -32,7 +32,6 @@ int main(){
         }
         else {cout << "la division de " <<  a << " par "<<  b << " n'est pas un réel !" << endl;
         }}
-    return 0;
 }
 
 
@@ -42,7 +41,7 @@ int main(){
 using namespace std;
 
 void bo() {
-    bool a = true, b = false, c = true;
+    bool a = false, b = true, c = true;
 
     bool result = a or b and c; // Résultat attendu : true
     cout << "a or b and c = " << result << endl;
@@ -74,3 +73,11 @@ void bo() {
 /// C++ compilateur , Python interpréteur
 /// La difference de temps d'execution entre les deux est considérable
 /// exemple : 1,5 s pour C++ et 7900 s pour python
+
+
+// MAIN
+
+int main(){
+    div_mu(); bo();
+    return 0;
+}

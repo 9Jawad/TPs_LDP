@@ -2,10 +2,9 @@
 
 #include <iostream>
 
-int main(){
+void hello(){
     //int x = 0;
     std::cout << "Hello,world." << std::endl;
-    return 0;
 }
 
 
@@ -29,7 +28,7 @@ void sum(){
 // #include<iostream>
 using namespace std;
 
-void div(){
+void div_calculator(){
     cout << " Division calculator " << endl;
     int a, b;
     cout << "Enter a value 1: " << endl;
@@ -37,4 +36,12 @@ void div(){
     cout << "Enter a value 2: " << endl;
     cin >> b;
     cout << "The result: " << a / b << endl;
+}
+
+
+// MAIN
+
+int main(){
+    div_calculator(); sum(); hello();
+    return 0;
 }
