@@ -24,7 +24,8 @@ void div() {
 
 
 // Exercice 19 ----------------------------------------------------------------
-// variables l, j, k ont un retard d'une incrémentation
+
+/// variables l, j, k ont un retard d'une assignation
 
 //#include <iostream>
 using namespace std;
@@ -75,3 +76,21 @@ int main(){
     }
     return 0;
 }
+
+
+// Exercice 22 ----------------------------------------------------------------
+
+/// utilisation d'une variable static
+/// donc 'c' ne sera pas remis à 0
+
+int func3() {
+    static int c = 0;
+    c++;
+    return c; }
+
+/// en supprimant le 'extern' du file2.cpp --> erreur
+/// car il a une duplication de symbole
+
+
+// Exercice 23 ----------------------------------------------------------------
+
