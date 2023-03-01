@@ -39,7 +39,6 @@ void trie(int x1, int x2, int x3){
             B = x3;
         }
     }
-
     cout << "les nombres trié : " << A << " " << B << " " << C << endl;
 }
 
@@ -94,7 +93,72 @@ int fake_m2(){
 
 // Exercice 26 ----------------------------------------------------------------
 
+int fibonacci_V1(int n){
+    int pre = 0;
+    int result = 1;
+    if (n == 0){
+        return 0;
+    }
+    else if (n == 1){
+        return 1;
+    }
+    else{
+        for (int i = 0; i < n - 1 ; i++){
+            result = result + pre;
+            pre = result - pre;
+        }
+    }
+    return result;
+}
 
+
+int fibonacci_V2(int n){
+    int pre = 0;
+    int result = 1;
+    if (n == 0){
+        return 0;
+    }
+    else if (n == 1){
+        return 1;
+    }
+    else{
+        int i = 0;
+        while (i < n - 1){
+            result = result + pre;
+            pre = result - pre;
+            i++;
+        }
+    }
+    return result;
+}
+
+
+int fibonacci_V3(int n){
+    int pre = 0;
+    int result = 1;
+    if (n == 0){
+        return 0;
+    }
+    else if (n == 1){
+        return 1;
+    }
+    else{
+        int i = 0;
+        do{
+            result = result + pre;
+            pre = result - pre;
+            i++;
+        } while (i < n - 1);
+    }
+    return result;
+}
+
+int fake_m3(){
+    cout << fibonacci_V1(16) << endl;
+    cout << fibonacci_V2(16) << endl;
+    cout << fibonacci_V3(16) << endl;
+    return 0;
+}
 
 
 // Exercice 27 ----------------------------------------------------------------
@@ -115,6 +179,6 @@ int fake_m2(){
 // MAIN
 
 int main(){
-    fake_m1(); fake_m2();
+    fake_m1(); fake_m2(); fake_m3();
     return 0;
 }
