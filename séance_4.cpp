@@ -59,33 +59,91 @@ int fake_m1(){
 
 // Exercice 25 ----------------------------------------------------------------
 
-enum alphabetic{A, B, C};
-
-alphabetic convert(string& item){
-    if (item == "A") {
-        return A;
-    }
-    else if (item == "B"){
-        return B;
-    }
-    else{
-        return C;
-    }
-}
-
 int fake_m2(){
-    string item;
-    cout << "Entrer la première lettre d'un prénom en maj : ";
+    char item;
+    cout << "Entrer la première lettre d'un prénom : ";
     cin >> item;
-    switch(convert(item)){
-        case A:
-            cout << "Angèle" << endl;
+    switch(toupper(item)){
+        case 'A':
+            cout << "Alice" << endl;
             break;
-        case B:
-            cout << "Benjamin" << endl;
+        case 'B':
+            cout << "Bob" << endl;
+            break;
+        case 'C':
+            cout << "Charles" << endl;
+            break;
+        case 'D':
+            cout << "David" << endl;
+            break;
+        case 'E':
+            cout << "Emily" << endl;
+            break;
+        case 'F':
+            cout << "Frank" << endl;
+            break;
+        case 'G':
+            cout << "George" << endl;
+            break;
+        case 'H':
+            cout << "Hannah" << endl;
+            break;
+        case 'I':
+            cout << "Isabelle" << endl;
+            break;
+        case 'J':
+            cout << "John" << endl;
+            break;
+        case 'K':
+            cout << "Kate" << endl;
+            break;
+        case 'L':
+            cout << "Liam" << endl;
+            break;
+        case 'M':
+            cout << "Mia" << endl;
+            break;
+        case 'N':
+            cout << "Nathan" << endl;
+            break;
+        case 'O':
+            cout << "Oliver" << endl;
+            break;
+        case 'P':
+            cout << "Paul" << endl;
+            break;
+        case 'Q':
+            cout << "Quentin" << endl;
+            break;
+        case 'R':
+            cout << "Rachel" << endl;
+            break;
+        case 'S':
+            cout << "Sarah" << endl;
+            break;
+        case 'T':
+            cout << "Thomas" << endl;
+            break;
+        case 'U':
+            cout << "Ursula" << endl;
+            break;
+        case 'V':
+            cout << "Vincent" << endl;
+            break;
+        case 'W':
+            cout << "William" << endl;
+            break;
+        case 'X':
+            cout << "Xavier" << endl;
+            break;
+        case 'Y':
+            cout << "Yvette" << endl;
+            break;
+        case 'Z':
+            cout << "Zoe" << endl;
             break;
         default:
-            cout << "Cédric" << endl;
+            cout << "Personne" << endl;
     }
     return 0;
 }
