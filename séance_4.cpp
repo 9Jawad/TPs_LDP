@@ -163,7 +163,27 @@ int fake_m3(){
 
 // Exercice 27 ----------------------------------------------------------------
 
+int fake_m4(){
+    int n;
+    int count = 0;
+    cout << "entier positif : " ;
+    cin >> n;
 
+    while(n != 1){
+        cout << n << " ";
+        if (n%2 == 0){
+            n = n / 2;
+        }
+        else{
+            n = n*3 + 1;
+        }
+        count++;
+        cout << n << endl;
+    }
+    cout << count << " itérations" << endl;
+
+    return 0;
+}
 
 
 // Exercice 28 ----------------------------------------------------------------
@@ -180,5 +200,6 @@ int fake_m3(){
 
 int main(){
     fake_m1(); fake_m2(); fake_m3();
+    fake_m4();
     return 0;
 }
