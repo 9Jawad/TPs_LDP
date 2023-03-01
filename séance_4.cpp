@@ -60,7 +60,36 @@ int fake_m1(){
 
 // Exercice 25 ----------------------------------------------------------------
 
+enum alphabetic{A, B, C};
 
+alphabetic convert(string& item){
+    if (item == "A") {
+        return A;
+    }
+    else if (item == "B"){
+        return B;
+    }
+    else{
+        return C;
+    }
+}
+
+int fake_m2(){
+    string item;
+    cout << "Entrer la première lettre d'un prénom en maj : ";
+    cin >> item;
+    switch(convert(item)){
+        case A:
+            cout << "Angèle" << endl;
+            break;
+        case B:
+            cout << "Benjamin" << endl;
+            break;
+        default:
+            cout << "Cédric" << endl;
+    }
+    return 0;
+}
 
 
 // Exercice 26 ----------------------------------------------------------------
@@ -86,6 +115,6 @@ int fake_m1(){
 // MAIN
 
 int main(){
-    fake_m1();
+    fake_m1(); fake_m2();
     return 0;
 }
