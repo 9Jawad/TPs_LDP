@@ -247,12 +247,34 @@ int fake_m4(){
 
 // Exercice 28 ----------------------------------------------------------------
 
+double factorielle(int n){
+    if (n == 0){return 1;}
+    else {return factorielle(n - 1 ) * n;} }
 
+double aproxiE(double epsilon){
+    double res = 0.0;
+    double term = 1.0;
+    int i = 0;
+    while (term > epsilon){
+        term = (1 / factorielle(i));
+        res += term;
+        i++;
+    }
+    return res;
+}
+
+int fake_m5(){
+    double epsilon;
+    cout << "Entrez un epsilon : ";
+    cin >> epsilon;
+    cout << "Approximation de e : " << aproxiE(epsilon) << endl;
+    return 0;
+}
 
 
 // Exercice 29 ----------------------------------------------------------------
 
-int fake_m6(int argc, char ** argv) {
+int fake_m6() {
 
     // nbr aléatoire
     int seed = time(0);
