@@ -170,7 +170,6 @@ int fibonacci_V1(int n){
     return result;
 }
 
-
 int fibonacci_V2(int n){
     int pre = 0;
     int result = 1;
@@ -190,7 +189,6 @@ int fibonacci_V2(int n){
     }
     return result;
 }
-
 
 int fibonacci_V3(int n){
     int pre = 0;
@@ -275,12 +273,10 @@ int fake_m5(){
 // Exercice 29 ----------------------------------------------------------------
 
 int fake_m6() {
-
     // nbr aléatoire
     int seed = time(0);
     srand(seed);
     int random_number = rand() % 101;
-
     // Jeu d'essai
     int i = 0;
     bool found = false;
@@ -300,7 +296,6 @@ int fake_m6() {
         }
         i++;
     }
-
     if (found) {
         cout << "Bravo ! En " << i << " essais" << endl;
     }
