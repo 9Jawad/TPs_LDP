@@ -1,6 +1,7 @@
 // Exercice 24
 
 #include <iostream>
+#include <ctime>
 using namespace std;
 
 void trie(int x1, int x2, int x3){
@@ -251,13 +252,47 @@ int fake_m4(){
 
 // Exercice 29 ----------------------------------------------------------------
 
+int fake_m6(int argc, char ** argv) {
 
+    // nbr aléatoire
+    int seed = time(0);
+    srand(seed);
+    int random_number = rand() % 101;
+
+    // Jeu d'essai
+    int i = 0;
+    bool found = false;
+    cout << "Vous devez trouver le nombre secret entre 1 et 100, vous avez 6 essais !" << endl;
+    while((i<6) && (not found)){
+        int choice;
+        cout << "tentative: ";
+        cin >> choice;
+        if (choice > random_number){
+            cout << "Le nombre secret est plus petit" << endl;
+        }
+        else if (choice < random_number){
+            cout << "Le nombre secret est plus grand" << endl;
+        }
+        else {
+            found = true;
+        }
+        i++;
+    }
+
+    if (found) {
+        cout << "Bravo ! En " << i << " essais" << endl;
+    }
+    else {
+        cout << "Vous avez perdu !" << endl;
+    }
+    return 0;
+}
 
 
 // MAIN
 
 int main(){
     fake_m1(); fake_m2(); fake_m3();
-    fake_m4();
+    fake_m4(); fake_m5(); fake_m6();
     return 0;
 }
